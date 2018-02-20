@@ -1,0 +1,43 @@
+<div class="container" style="margin-top: 10px">
+  <div  class="container">
+    <ul class="row nav nav-tabs" style="height: 100%">
+      <li  role="presentation"
+           style="height: 100%;" >
+        <div class="div_middle_content">
+          <img src="/images/logo dig core.png" class="img-responsive" width="50" height="50">
+        </div>
+        <a [routerLink]="['/tabs/smartService']"
+           routerLinkActive="active"
+           [routerLinkActiveOptions]="{exact: true}">
+          <span class="text-info" style="font-size: small">
+            <strong>Transforming Telcos to be “Smart Services” providers</strong></span>
+        </a>
+      </li>
+      <li role="presentation" style="height: 100%;" >
+        <div class="div_middle_content">
+          <img src="/images/logo value.png" class="img-responsive" width="50" height="50">
+        </div>
+        <a [routerLink]="['/tabs/valueIntegraion']"
+           routerLinkActive="active"
+           [routerLinkActiveOptions]="{exact: true}">
+          <span class="text-info" style="font-size: small">
+            <strong>Telcos as Value Integrators in Digital Era</strong></span>
+        </a>
+      </li>
+      <li role="presentation" style="height: 100%;">
+        <div class="div_middle_content">
+          <img src="/images/logo fot.png" class="img-responsive" width="50" height="50">
+        </div>
+        <a routerLinkActive="active"
+           [routerLinkActiveOptions]="{exact: true}"
+                  [routerLink]="['/tabs/digitalExperiance']">
+          <span class="text-info" style="font-size: small">
+            <strong>Envisioning Telcos as “Custodians of Digital Experience”</strong></span>
+        </a>
+      </li>
+    </ul>
+    <div class="container-fluid">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
